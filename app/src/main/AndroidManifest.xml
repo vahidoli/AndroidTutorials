@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ServiceActivity">
+        <activity android:name=".ReceiverActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,6 +17,11 @@
             </intent-filter>
         </activity>
         <service android:name=".ServiceClass" />
+        <receiver android:name=".ReceiverClass">
+            <intent-filter>
+                <action android:name="com.wahid.EXAMPLE_BROADCAST" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
