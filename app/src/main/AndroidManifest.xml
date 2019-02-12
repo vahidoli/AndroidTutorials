@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReceiverActivity">
+        <activity android:name=".DownloadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".DownloadService"/>
         <service android:name=".ServiceClass" />
         <receiver android:name=".ReceiverClass">
             <intent-filter>
